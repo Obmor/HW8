@@ -29,25 +29,18 @@ public class Main {
 
 
         System.out.println("Exercise 3.");
-        System.out.print(theFirstArray[2] + ", " + theFirstArray[1] + ", " + theFirstArray[0]);
-        System.out.println();
-        System.out.print(theSecondArray[2] + ", " + theSecondArray[1] + ", " + theSecondArray[0]);
-        System.out.println();
-        System.out.print(theThirdArray[2] + ", " + theThirdArray[1] + ", " + theThirdArray[0]);
-        System.out.println();
+        System.out.println(theFirstArray[2] + ", " + theFirstArray[1] + ", " + theFirstArray[0]);
+        System.out.println(theSecondArray[2] + ", " + theSecondArray[1] + ", " + theSecondArray[0]);
+        System.out.println(theThirdArray[2] + ", " + theThirdArray[1] + ", " + theThirdArray[0]);
         System.out.println();
 
 
         System.out.println("Exercise 4.");
         for(int i = 0; i < theFirstArray.length; i++) {
-            if (theFirstArray[0] % 2 != 0) {
-                theFirstArray[0] += 1;
-            } else if (theFirstArray[1] % 2 != 0) {
-                theFirstArray[1] += 1;
-            } else if (theFirstArray[2] % 2 !=0) {
-                theFirstArray[2] += 1;
-                System.out.println(Arrays.toString(theFirstArray));
+            if (theFirstArray[i] % 2 != 0) {
+                theFirstArray[i]++;
             }
         }
+        System.out.println(Arrays.toString(theFirstArray));
     }
 }
